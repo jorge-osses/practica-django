@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.navbar {
+    background: #404040;
+    padding: 5px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: aquamarine;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}

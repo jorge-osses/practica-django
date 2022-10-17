@@ -1,4 +1,18 @@
-<h1>Welcome to Django</h1>
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+<img src="{% static 'logo_python.jpg' %}" alt="" width="50">
+
 <p>
-    lorem ipsum campi
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quia veniam, similique modi vel ullam
+    perspiciatis nisi ducimus aliquam animi ad at officiis libero beatae, sint eos. Nisi distinctio eaque quo eveniet,
+    unde veritatis illo temporibus odit voluptatibus a provident similique omnis sunt fuga cum quaerat laudantium eum
+    quis vitae.
 </p>
+
+{% endblock %}
