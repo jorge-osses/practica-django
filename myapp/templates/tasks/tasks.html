@@ -4,21 +4,22 @@
 
 <h1>TASKS</h1>
 
-{% for task in tasks %}
-
-<article>
-    <h2>{% if task.done == False %}⏱{% else %}✅{% endif %} {{ task.title }}</h2>
-    {% if task.done == False %}
-    <p>Tarea pendiente</p>
-    {% else %}
-    <p>Tarea Realizada</p>
-    {% endif %}
-    <h3> {{ task.description }} </h3>
-    <h5>Project: {{ task.project.name }} id: {{ task.project.id }} </h5>
-    <button>Delete</button>
-    <button>Done</button>
+<article class="contain_items">
+    {% for task in tasks %}
+    <div class="card">
+        <h2>{% if task.done == False %}⏱{% else %}✅{% endif %} {{ task.title }}</h2>
+        {% if task.done == False %}
+        <p>Tarea pendiente</p>
+        {% else %}
+        <p>Tarea Realizada</p>
+        {% endif %}
+        <h3> {{ task.description }} </h3>
+        <h5>Project: {{ task.project.name }} id: {{ task.project.id }} </h5>
+        <button>Delete</button>
+        <button>✅ Done</button>
+    </div>
+    {% endfor %}
 </article>
 
-{% endfor %}
 
 {% endblock %}

@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color: blanchedalmond;
+    color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -30,4 +30,44 @@ body {
 .container {
     max-width: 1000px;
     margin: auto;
+    padding: 20px 10px;
+}
+
+.card {
+    background-color: aliceblue;
+    color: black;
+    width: fit-content;
+    padding: 10px;
+    margin: 12px auto;
+    border-radius: 10px;
+    border: solid 3px red;
+}
+
+.cardone {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.cardone ul {
+    list-style: none;
+}
+
+.cardone ul li a {
+    text-decoration: none;
+}
+
+.contain_items {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.input {
+    background: rgb(247, 172, 86);
+    padding: 10px;
+    text-align: center;
+    display: block;
 }
